@@ -103,22 +103,22 @@ const routes = [
             // icon: <FaUser />,
           },
           {
-            path: "/log/SeatRoleAuditLogReport",
+            path: "/log/SeatRoleAudit",
             name: "Seat Role Audit Log Report",
             // icon: <FaUser />,
           },
           {
-            path: "/log/RoleMenuAuditLogReport",
+            path: "/log/RoleMenuAudit",
             name: "Role Menu Audit Log Report",
             // icon: <FaUser />,
           },
           {
-            path: "/log/UserAuditLogReport",
+            path: "/log/UserAudit",
             name: "User Audit Log Report",
             // icon: <FaUser />,
           },
           {
-            path: "/log/SeatPermissionAuditLogReport",
+            path: "/log/SeatPermissionAudit",
             name: "Seat Permission Audit Log Report",
             // icon: <FaUser />,
           }]

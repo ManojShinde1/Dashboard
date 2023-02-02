@@ -24,6 +24,10 @@ import Logout from "./pages/subMenu/Logout";
 import UserProfile from "./pages/subMenu/UserProfile";
 import UserLogReport from "./pages/subMenu/UserLogReport";
 import UserMgmtTree from "./pages/subMenu/UserMgmtTree";
+import SeatRoleAudit from "./pages/subMenu/SeatRoleAudit";
+import RoleMenuAudit from "./pages/subMenu/RoleMenuAudit";
+import UserAudit from "./pages/subMenu/UserAudit";
+import SeatPermissionAudit from "./pages/subMenu/SeatPermissionAudit";
 
 function App() {
   return (
@@ -60,6 +64,10 @@ function App() {
           <Route path="/log/UserProfile" element={<UserProfile />} />
           <Route path="/log/UserLogReport" element={<UserLogReport />} />
           <Route path="/log/UserMgmtTree" element={<UserMgmtTree />} />
+          <Route path="/log/SeatRoleAudit" element={<SeatRoleAudit />} />
+          <Route path="/log/RoleMenuAudit" element={<RoleMenuAudit />} />
+          <Route path="/log/UserAudit" element={<UserAudit />} />
+          <Route path="/log/SeatPermissionAudit" element={<SeatPermissionAudit />} />
 
           <Route path="/Logout" element={<Logout />} />
 
