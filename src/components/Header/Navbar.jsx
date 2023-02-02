@@ -5,7 +5,7 @@ const Navbar = () => {
         <nav class="navbar">
               {/* <img src={pic} id="cdac_logo"/> */}
               <img src={pic} id="cdac_logo"/><br/>
-        <a class="navbar-brand mb-0 ml-5 h1">Logout</a>
+        {/* <a class="navbar-brand mb-0 ml-5 h1">Logout</a> */}
       </nav>
       
     );

@@ -3,7 +3,7 @@ const Footer = () => {
 
         <nav class="Footer">
         
-        <span class="navbar-brand mb-0 ml-4 h1">CDAC DELHI</span>
+        <span class="navbar-brand mb-0 ml-4 p">CDAC DELHI</span>
       </nav>
       
     );

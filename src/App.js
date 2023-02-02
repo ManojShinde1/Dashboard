@@ -20,6 +20,10 @@ import GroupRoleMaster from "./pages/subMenu/GroupRoleMaster";
 import RoleMenuMaster from "./pages/subMenu/RoleMenuMaster";
 import SeatRoleMaster from "./pages/subMenu/SeatRoleMaster";
 import SeatPermissionMaster from "./pages/subMenu/SeatPermission";
+import Logout from "./pages/subMenu/Logout";
+import UserProfile from "./pages/subMenu/UserProfile";
+import UserLogReport from "./pages/subMenu/UserLogReport";
+import UserMgmtTree from "./pages/subMenu/UserMgmtTree";
 
 function App() {
   return (
@@ -50,6 +54,14 @@ function App() {
           <Route path="/role/RoleMenuMaster" element={<RoleMenuMaster />} />
           <Route path="/role/SeatRoleMaster" element={<SeatRoleMaster />} />
           <Route path="/role/SeatPermissionMaster" element={<SeatPermissionMaster />} />
+
+          {/* Sub Log Master Route */}
+
+          <Route path="/log/UserProfile" element={<UserProfile />} />
+          <Route path="/log/UserLogReport" element={<UserLogReport />} />
+          <Route path="/log/UserMgmtTree" element={<UserMgmtTree />} />
+
+          <Route path="/Logout" element={<Logout />} />
 
           <Route path="*" element={<> not found</>} />
         </Routes>

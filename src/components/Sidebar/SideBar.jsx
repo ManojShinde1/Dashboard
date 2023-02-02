@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
 
 
+
 const routes = [
   {
     path: "/",
@@ -92,12 +93,12 @@ const routes = [
             // icon: <FaSign />,
           },
           {
-            path: "/log/User Log Report",
-            name: "Group Role Master",
+            path: "/log/UserLogReport",
+            name: "User Log Report",
             // icon: <FaSign />,
           },
           {
-            path: "/log/UserMgmtTreeView",
+            path: "/log/UserMgmtTree",
             name: "User Mgmt Tree View",
             // icon: <FaUser />,
           },
@@ -149,11 +150,7 @@ const routes = [
   //     },
   //   ],
   // },
-  // {
-  //   path: "/order",
-  //   name: "Order",
-  //   icon: <BsCartCheck />,
-  // },
+
   {
     path: "/settings",
     name: "Settings",
@@ -175,7 +172,13 @@ const routes = [
         name: "Billing",
         icon: <FaMoneyBill />,
       },
+    
     ],
+  },
+  {
+    path: "/logout",
+    name: "Logout",
+    icon: <FaSign/>,
   },
   // {
   //   path: "/saved",
