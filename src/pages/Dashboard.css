@@ -60,6 +60,8 @@ img{
   .Dashboard {
     text-align: center;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+
+  /* ui is breaking after this property is enabled  */
+    /* align-items: center; */
   }
