@@ -123,11 +123,11 @@ const routes = [
             // icon: <FaUser />,
           }]
         },
-  {
-    path: "/analytics",
-    name: "Analytics",
-    icon: <BiAnalyse />,
-  },
+  // {
+  //   path: "/analytics",
+  //   name: "Analytics",
+  //   icon: <BiAnalyse />,
+  // },
   // {
   //   path: "/file-manager",
   //   name: "File Manager",

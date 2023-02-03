@@ -4,30 +4,28 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Dashboard from "./pages/Dashboard";
 import Users from "./pages/Users";
-import Messages from "./pages/Messages";
-import FileManager from "./pages/FileManager";
+
 import Analytics from "./pages/Analytics";
-import Order from "./pages/Order";
-import Saved from "./pages/Saved";
+
 import Setting from "./pages/Setting";
-import GroupMaster from "./pages/subMenu/GroupMaster";
-import SeatMaster from "./pages/subMenu/SeatMaster";
-import UserMaster from "./pages/subMenu/UserMaster";
-import ResetPass from "./pages/subMenu/ResetPass";
-import ChangeAdminPass from "./pages/subMenu/ChangeAdminPass";
-import RoleMaster from "./pages/subMenu/RoleMaster";
-import GroupRoleMaster from "./pages/subMenu/GroupRoleMaster";
-import RoleMenuMaster from "./pages/subMenu/RoleMenuMaster";
-import SeatRoleMaster from "./pages/subMenu/SeatRoleMaster";
-import SeatPermissionMaster from "./pages/subMenu/SeatPermission";
+import GroupMaster from "./pages/subMenu/UserManagement/GroupMaster";
+import SeatMaster from "./pages/subMenu/UserManagement/SeatMaster";
+import UserMaster from "./pages/subMenu/UserManagement/UserMaster";
+import ResetPass from "./pages/subMenu/UserManagement/ResetPass";
+import ChangeAdminPass from "./pages/subMenu/UserManagement/ChangeAdminPass";
+import RoleMaster from "./pages/subMenu/RoleManagement/RoleMaster";
+import GroupRoleMaster from "./pages/subMenu/RoleManagement/GroupRoleMaster";
+import RoleMenuMaster from "./pages/subMenu/RoleManagement/RoleMenuMaster";
+import SeatRoleMaster from "./pages/subMenu/RoleManagement/SeatRoleMaster";
+import SeatPermissionMaster from "./pages/subMenu/RoleManagement/SeatPermission";
 import Logout from "./pages/subMenu/Logout";
-import UserProfile from "./pages/subMenu/UserProfile";
-import UserLogReport from "./pages/subMenu/UserLogReport";
-import UserMgmtTree from "./pages/subMenu/UserMgmtTree";
-import SeatRoleAudit from "./pages/subMenu/SeatRoleAudit";
-import RoleMenuAudit from "./pages/subMenu/RoleMenuAudit";
-import UserAudit from "./pages/subMenu/UserAudit";
-import SeatPermissionAudit from "./pages/subMenu/SeatPermissionAudit";
+import UserProfile from "./pages/subMenu/LogManagement/UserProfile";
+import UserLogReport from "./pages/subMenu/LogManagement/UserLogReport";
+import UserMgmtTree from "./pages/subMenu/LogManagement/UserMgmtTree";
+import SeatRoleAudit from "./pages/subMenu/LogManagement/SeatRoleAudit";
+import RoleMenuAudit from "./pages/subMenu/LogManagement/RoleMenuAudit";
+import UserAudit from "./pages/subMenu/LogManagement/UserAudit";
+import SeatPermissionAudit from "./pages/subMenu/LogManagement/SeatPermissionAudit";
 
 function App() {
   return (
@@ -37,11 +35,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/users" element={<Users />} />
-          <Route path="/messages" element={<Messages />} />
-          <Route path="/analytics" element={<Analytics />} />
-          <Route path="/file-manager" element={<FileManager />} />
-          <Route path="/order" element={<Order />} />
-          <Route path="/saved" element={<Saved />} />
+    
+          {/* <Route path="/analytics" element={<Analytics />} /> */}
+
           <Route path="/settings" element={<Setting />} />
 
           {/* Sub User Master route */}
@@ -60,7 +56,6 @@ function App() {
           <Route path="/role/SeatPermissionMaster" element={<SeatPermissionMaster />} />
 
           {/* Sub Log Master Route */}
-
           <Route path="/log/UserProfile" element={<UserProfile />} />
           <Route path="/log/UserLogReport" element={<UserLogReport />} />
           <Route path="/log/UserMgmtTree" element={<UserMgmtTree />} />
@@ -68,6 +63,7 @@ function App() {
           <Route path="/log/RoleMenuAudit" element={<RoleMenuAudit />} />
           <Route path="/log/UserAudit" element={<UserAudit />} />
           <Route path="/log/SeatPermissionAudit" element={<SeatPermissionAudit />} />
+
 
           <Route path="/Logout" element={<Logout />} />
 

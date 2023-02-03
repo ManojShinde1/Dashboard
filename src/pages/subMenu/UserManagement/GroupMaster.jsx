@@ -1,6 +1,4 @@
 import { FaBold} from "react-icons/fa";
-import Navbar from "../../components/Header/Navbar";
-import Footer from "../../components/Footer/Footer";
 
 const GroupMaster = () => {
     return (
